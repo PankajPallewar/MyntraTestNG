@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite" parallel="classes" thread-count="2">
+    <test name="Regression Tests">
+        <classes>
+            <class name="scripts.HomePageSuite">
+                <methods>
+                    <include name="verifyHomePageMenus"/>
+                </methods>
+            </class>
+            <class name="scripts.SearchPageSuite">
+                <methods>
+                    <include name="verifySearchedProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
